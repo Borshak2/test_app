@@ -1,4 +1,6 @@
-part of 'home_widgets.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test_app/core/app_icons.dart';
+import 'package:flutter_test_app/feature/filter/view/filter.dart';
 
 AppBar homeAppBar(BuildContext context) {
   return AppBar(

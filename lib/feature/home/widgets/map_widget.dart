@@ -1,4 +1,4 @@
-part of 'home_widgets.dart';
+import 'package:flutter/material.dart';
 
 class MapWidget extends StatelessWidget {
   const MapWidget({super.key, required this.screenWidth});

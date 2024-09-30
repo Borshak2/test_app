@@ -6,8 +6,10 @@ import 'package:flutter_test_app/theme/app_theme.dart';
 
 
 
+
 void main() async {
   await boosttrap(() => const MyApp());
+
 }
 
 class MyApp extends StatelessWidget {

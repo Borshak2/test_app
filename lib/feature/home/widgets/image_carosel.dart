@@ -1,4 +1,5 @@
-part of 'home_widgets.dart';
+import 'package:carousel_slider/carousel_slider.dart';
+import 'package:flutter/material.dart';
 
 class ImageCarousel extends StatefulWidget {
   final List<String> imageUrls;

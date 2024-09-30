@@ -1,19 +1,20 @@
-part of 'home_widgets.dart';
-
+import 'package:flutter/material.dart';
+import 'package:flutter_test_app/data/models/category_model.dart';
 
 class CategoryItem extends StatelessWidget {
   final CategoryModel category;
-  final  bool isSelected;
+  final bool isSelected;
   final Function(int) onPress;
 
-  const CategoryItem({super.key, required this.category, required this.onPress, required this.isSelected});
+  const CategoryItem(
+      {super.key,
+      required this.category,
+      required this.onPress,
+      required this.isSelected});
 
-
-
-@override
+  @override
   Widget build(BuildContext context) {
-    final screenWidth =
-        MediaQuery.of(context).size.width; 
+    final screenWidth = MediaQuery.of(context).size.width;
 
     return GestureDetector(
       onTap: () => onPress(category.id),
@@ -22,18 +23,14 @@ class CategoryItem extends StatelessWidget {
         child: Container(
           decoration: BoxDecoration(
             borderRadius: BorderRadius.all(Radius.circular(10)),
-            color: isSelected
-                ? Colors.grey
-                : Colors
-                    .transparent, 
+            color: isSelected ? Colors.grey : Colors.transparent,
           ),
           child: Padding(
-            padding: EdgeInsets.all(
-                screenWidth * 0.03), 
+            padding: EdgeInsets.all(screenWidth * 0.03),
             child: Column(
               children: [
                 Container(
-                  width: screenWidth * 0.1, 
+                  width: screenWidth * 0.1,
                   height: screenWidth * 0.1,
                   child: category.icon,
                 ),

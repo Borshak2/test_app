@@ -1,4 +1,9 @@
-part of 'home_widgets.dart';
+import 'package:auto_route/auto_route.dart';
+import 'package:flutter/material.dart';
+import 'package:flutter_test_app/app/router/app_router.gr.dart';
+import 'package:flutter_test_app/core/app_icons.dart';
+import 'package:flutter_test_app/data/models/places_model.dart';
+import 'package:flutter_test_app/feature/home/widgets/image_carosel.dart';
 
 class PlaceCard extends StatelessWidget {
   final ShortPalaceModel place;
